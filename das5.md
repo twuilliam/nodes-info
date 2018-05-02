@@ -28,7 +28,7 @@ Pick the version you want for CUDA by looking at what's available `module avail 
 `srun -u --pty bash -i` Get an interactive session on a *CPU* node  
 `srun -u --pty --gres=gpu:1 bash -i` Get an interactive session on a *GPU* node  
 `srun -u --pty -w node404 bash -i`  Get an interactive session on `node404`  
-`srun -u --pty -p fat bash -i`  Get an interactive session on the fatq node (more RAM)
+`srun -u --pty -p fatq bash -i`  Get an interactive session on the fatq node (more RAM)
 
 Ideally you should submit a job instead of using an interactive session:
 
