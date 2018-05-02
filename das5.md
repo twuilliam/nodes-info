@@ -32,7 +32,7 @@ Pick the version you want for CUDA by looking at what's available `module avail 
 
 Ideally you should submit a job instead of using an interactive session:
 
-`srun --gres:gpu:1  python myscript.py --myargument=foo`
+`srun --gres=gpu:1  python myscript.py --myargument=foo`
 
 ## Monitor node usage
 
