@@ -32,7 +32,7 @@ Pick the version you want for CUDA by looking at what's available `module avail 
 
 Ideally you should submit a job instead of using an interactive session:
 
-`srun --gres:gpu:1  python myscript.py --myarguments=foo`
+`srun --gres:gpu:1  python myscript.py --myargument=foo`
 
 ## Monitor node usage
 
@@ -45,3 +45,7 @@ Your homefolder space is quite limited. Only use it for scripts.
 Install your own python or other stuff on `/var/scratch/` (create your own folder there).
 
 Also store your data on `/var/scratch/`.
+
+## More info
+
+Read more on the [das-5 website](https://www.cs.vu.nl/das5/jobs.shtml).
