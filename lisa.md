@@ -41,6 +41,8 @@ qstat -n gpu && qstat -q gpu
 
 ## Credit system
 
+You can monitor your credits through `accinfo`, which gives an overview of your account information and your credit budget, or `accuse` which shows your monthly usage.
+
 Make sure that you don't have a credit of 0, otherwise ask Boy Menist <b.n.j.menist@uva.nl> to fix your account.  
 
 At first, 10k credits are assigned to new users.
