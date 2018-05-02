@@ -1,12 +1,12 @@
 # nodes-info
 
-Ressources on how to use the GPU clusters: [das5](das5.md) and [LISA](lisa.md).
+Resources on how to use the GPU clusters: [das5](das5.md) and [LISA](lisa.md).
 
 ## General things to know
 
 * DO NOT stay idle on a GPU node.
 
-* Learn on how to create sessions with either `screen` or `tmux`.
+* Learn on how to create sessions with either `screen` or `tmux`. Open a session then submit your job.
 
 * `nvidia-smi` is useful to check the usage of GPUs on a node.
 
