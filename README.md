@@ -6,7 +6,7 @@ Resources on how to use the GPU clusters: [das5](das5.md) and [LISA](lisa.md).
 
 * DO NOT stay idle on a GPU node.
 
-* Learn on how to create sessions with either `screen` or `tmux`. Open a session then submit your job.
+* Learn on how to create sessions with either `screen` or `tmux`. Opening a session and then submitting your job allows you to disconnect and then later resume (from a different location) and monitor the progress. `tmux` is not available on lisa.
 
 * `nvidia-smi` is useful to check the usage of GPUs on a node.
 
@@ -16,7 +16,7 @@ Resources on how to use the GPU clusters: [das5](das5.md) and [LISA](lisa.md).
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python exp1.py &
- 	CUDA_VISIBLE_DEVICES=1,2 python exp2.py &
- 	CUDA_VISIBLE_DEVICES=3 python exp3.py &
-	wait
+CUDA_VISIBLE_DEVICES=1,2 python exp2.py &
+CUDA_VISIBLE_DEVICES=3 python exp3.py &
+wait
 ```
