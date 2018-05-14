@@ -4,7 +4,8 @@
 
 Ask for an account by sending an email to <helpdesk@surfsara.nl>.
 Add the following [information](https://userinfo.surfsara.nl/systems/lisa/account) in your email.
-Note that a (short) support letter from your advisor is mandatory to get approved. It should normally take 1-2 days.
+Note that a (short) support letter from your advisor is mandatory to get approved.  
+It should normally take 1-2 days.
 
 ## Hostname
 
@@ -48,7 +49,7 @@ Make sure that you don't have a credit of 0, otherwise ask Boy Menist <b.n.j.men
 At first, 10k credits are assigned to new users.
 If you run out of credits (i.e. negative number), ask the helpdesk for more credits.
 
-One hour on a GPU node is equivalent to 48 credits.
+One hour of computation on a GPU node is equivalent to 48 credits.
 
 ## More info
 
