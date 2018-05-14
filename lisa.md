@@ -21,6 +21,8 @@ module load CUDA
 module load cuDNN
 ```
 
+You need to load `eb` first to have access to the CUDA modules.
+
 Pick the version you want for CUDA by looking at what's available `module avail CUDA`
 
 ## Get a node with torque
