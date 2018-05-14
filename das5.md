@@ -2,7 +2,7 @@
 
 ## Account creation
 
-Ask for an account by sending an email to <das-account@cs.vu.nl>.
+Ask for an account by sending an email to <das-account@cs.vu.nl>. Use your `@uva.nl` email address.  
 It should normally take 1-2 days.
 
 ## Hostname
@@ -42,9 +42,7 @@ Either use `squeue` or `mywatch` (see last line of [.bashrc](#useful-things-to-h
 
 Your homefolder space is quite limited. Only use it for scripts.
 
-Install your own python or other stuff on `/var/scratch/` (create your own folder there).
-
-Also store your data on `/var/scratch/`.
+Install your own python or other stuff on `/var/scratch/` (there is already a directory for each user). Also store your data on `/var/scratch/`. If you run out of space, ask Dennis.
 
 ## More info
 
