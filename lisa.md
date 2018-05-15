@@ -35,11 +35,24 @@ qsub -I -lwalltime=HH:MM:SS -qgpu
 `-lwalltime` maximum of 5 days (120:00:00)  
 `-qgpu` get a node with GPUs
 
+You can also submit a job instead of using an interactive session:
+
+```bash
+qsub -lwalltime=HH:MM:SS -qgpu myjob.sh
+```
+
+torque will provide a job id. Use that id if you want to remove yourself from the queue with `qdel [job id]`.
 
 ## Monitor node usage
 
 ```bash
 qstat -n gpu && qstat -q gpu
+```
+
+Also useful to see only the queue:
+
+```bash
+qstat -i gpu
 ```
 
 ## Credit system
