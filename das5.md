@@ -34,6 +34,8 @@ Ideally you should submit a job instead of using an interactive session:
 
 `srun --gres=gpu:1  python myscript.py --myargument=foo`
 
+`srun --gres=gpu:4 bash mybashscript.sh`
+
 ## Monitor node usage
 
 Either use `squeue` or `mywatch` (see last line of [.bashrc](#useful-things-to-have-in-your-bashrc))
