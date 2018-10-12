@@ -55,6 +55,13 @@ Also useful to see only the queue:
 qstat -i gpu
 ```
 
+## Disk space
+
+You will be allocated 200GB on your home folder.
+
+There are also temporary storage space and project space available. Check this [page](https://userinfo.surfsara.nl/systems/lisa/getting-started#filesystems).
+
+
 ## Credit system
 
 You can monitor your credits through `accinfo`, which gives an overview of your account information and your credit budget, or `accuse` which shows your monthly usage.
@@ -62,7 +69,7 @@ You can monitor your credits through `accinfo`, which gives an overview of your 
 Make sure that you don't have a credit of 0, otherwise ask Boy Menist <b.n.j.menist@uva.nl> to fix your account.  
 
 At first, 10k credits are assigned to new users.
-If you run out of credits (i.e. negative number), ask the helpdesk for more credits.
+If you run out of credits (i.e. negative number), ask the helpdesk for more credits and put Boy Menist on cc.
 
 One hour of computation on a GPU node is equivalent to 48 credits.
 
