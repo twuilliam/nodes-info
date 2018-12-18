@@ -16,12 +16,9 @@ The head node has GPUs. You can debug your code there for 15 min.
 ## Useful things to have in your `.bashrc`
 
 ```bash
-module load eb
 module load CUDA
 module load cuDNN
 ```
-
-You need to load `eb` first to have access to the CUDA modules.
 
 Pick the version you want for CUDA by looking at what's available `module avail CUDA`
 
@@ -34,7 +31,7 @@ srun -u --pty --time=HH:MM:SS -p gpu bash -i
 `--time` maximum of 5 days (120:00:00)  
 `-p gpu` get a node with GPUs
 
-You can also submit a job instead of using an interactive session:
+However, the preferred way of interacting with the job queue is to submit a job using the interactive session:
 
 ```bash
 srun --time=HH:MM:SS -p gpu myjob.sh
@@ -58,7 +55,7 @@ squeue -p gpu
 
 ## Disk space
 
-You will be allocated 200GB on your home folder.
+You will be allocated free space 200GB on your home folder.
 
 There are also temporary storage space and project space available. Check this [page](https://userinfo.surfsara.nl/systems/lisa/getting-started#filesystems).
 
