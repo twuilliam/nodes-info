@@ -25,34 +25,35 @@ You need to load `eb` first to have access to the CUDA modules.
 
 Pick the version you want for CUDA by looking at what's available `module avail CUDA`
 
-## Get a node with torque
+## Get a node with slurm
 
 ```bash
-qsub -I -lwalltime=HH:MM:SS -qgpu
+srun -u --pty -lwalltime=HH:MM:SS -p gpu bash -i
 ```
 
-`-I` interactive session  
 `-lwalltime` maximum of 5 days (120:00:00)  
-`-qgpu` get a node with GPUs
+`-p gpu` get a node with GPUs
 
 You can also submit a job instead of using an interactive session:
 
 ```bash
-qsub -lwalltime=HH:MM:SS -qgpu myjob.sh
+srun -lwalltime=HH:MM:SS -p gpu myjob.sh
 ```
 
-torque will provide a job id. Use that id if you want to remove yourself from the queue with `qdel [job id]`.
+slurm will provide a job id. Use that id if you want to remove yourself from the queue with `scancel [job id]`.
 
 ## Monitor node usage
 
+See which nodes are available:
+
 ```bash
-qstat -n gpu && qstat -q gpu
+sinfo -p gpu
 ```
 
-Also useful to see only the queue:
+See who is in the queue:
 
 ```bash
-qstat -i gpu
+squeue -p gpu
 ```
 
 ## Disk space
