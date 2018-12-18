@@ -28,16 +28,16 @@ Pick the version you want for CUDA by looking at what's available `module avail 
 ## Get a node with slurm
 
 ```bash
-srun -u --pty -lwalltime=HH:MM:SS -p gpu bash -i
+srun -u --pty --time=HH:MM:SS -p gpu bash -i
 ```
 
-`-lwalltime` maximum of 5 days (120:00:00)  
+`--time` maximum of 5 days (120:00:00)  
 `-p gpu` get a node with GPUs
 
 You can also submit a job instead of using an interactive session:
 
 ```bash
-srun -lwalltime=HH:MM:SS -p gpu myjob.sh
+srun --time=HH:MM:SS -p gpu myjob.sh
 ```
 
 slurm will provide a job id. Use that id if you want to remove yourself from the queue with `scancel [job id]`.
