@@ -9,7 +9,7 @@
 ```bash
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda-8.0/lib64
 export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/usr/local/cuda-8.0/cudnn/cuda/lib64
-alias mywatch='/home/koelma/bin/mywatch'
+alias mywatch='/home/dkoelma1/bin/mywatch'
 ```
 
 Pick the version you want for CUDA by looking at what's available in `/usr/local/`.
