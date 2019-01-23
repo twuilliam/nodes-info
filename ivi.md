@@ -36,3 +36,13 @@ Either use `squeue` or `mywatch` (see last line of [.bashrc](#useful-things-to-h
 ## Data storage
 
 TBA
+
+## Change GCC version
+
+The default gcc version is 4.8.
+
+Use GCC 6 with
+`source /opt/rh/devtoolset-6/enable`
+
+or GCC 7 with
+`source /opt/rh/devtoolset-7/enable`
