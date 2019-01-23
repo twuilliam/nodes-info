@@ -39,7 +39,7 @@ TBA
 
 ## Change GCC version
 
-The default gcc version is 4.8.
+The default GCC version is 4.8.
 
 Use GCC 6 with
 `source /opt/rh/devtoolset-6/enable`
