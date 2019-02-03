@@ -29,6 +29,8 @@ Same but with 4 GPUs:
 Ideally you should submit a job instead of using an interactive session:  
 `srun --gres=gpu:1 --mem=32G --cpus-per-task=12 --time=1-0 python myscript.py --myargument=foo`
 
+slurm will provide a job id. Use that id if you want to remove yourself from the queue with `scancel [job id]`.
+
 ## Monitor node usage
 
 Either use `squeue` or `mywatch` (see last line of [.bashrc](#useful-things-to-have-in-your-bashrc))
@@ -39,7 +41,7 @@ TBA
 
 ## Change GCC version
 
-The default GCC version is 4.8.
+The default GCC version is 4.8.  
 Use GCC 6 with
 `source /opt/rh/devtoolset-6/enable`
 or GCC 7 with
