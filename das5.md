@@ -36,6 +36,8 @@ Ideally you should submit a job instead of using an interactive session:
 
 `srun --gres=gpu:4 bash mybashscript.sh`
 
+slurm will provide a job id. Use that id if you want to remove yourself from the queue with `scancel [job id]`.
+
 ## Jupyter notebook on a node
 
 For those who want to play with jupyter notebook on a node, here is the procedure.
