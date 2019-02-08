@@ -16,20 +16,21 @@ Pick the version you want for CUDA by looking at what's available in `/usr/local
 
 ## Get a node with slurm
 
-When submitting a job, you need to specify the number of GPU, the ram, the number of CPUs and the duration.  
-Each node has 4 GPUs, 128GB of ram, 48 CPU threads (but 2 are used for slurm) and a time limit of 7 days.
+When submitting a job, you need to specify the number of GPU, the ram, the number of CPUs and the duration. Please adjust these arguments according to your needs.  
+Each node has 4 GPUs, 128GB of ram, 48 CPU threads (but 2 are used for slurm), and 2x10 TB local HDD (/hddstore). Maximum run time is 7 days.
 
-Here is an example on how to get an interactive session with 1 GPU for one day:  
-`srun -u --pty --gres=gpu:1 --mem=32G --cpus-per-task=12 --time=1-0 bash -i`  
+Here is an example on how to get an interactive session with 1 GPU for 2h30:  
+`srun -u --pty --gres=gpu:1 --mem=30G --cpus-per-task=10 --time=2:30:00 bash -i`
 
-Same but with 4 GPUs:  
-`srun -u --pty --gres=gpu:4 --mem=0 --cpus-per-task=46 --time=1-0 bash -i`  
-(`--mem=0` books all the memory)
+Same but with 4 GPUs for 1 day and 8 hours:  
+`srun -u --pty --gres=gpu:4 --mem=120G --cpus-per-task=40 --time=1-8 bash -i`  
 
 Ideally you should submit a job instead of using an interactive session:  
 `srun --gres=gpu:1 --mem=32G --cpus-per-task=12 --time=1-0 python myscript.py --myargument=foo`
 
 slurm will provide a job id. Use that id if you want to remove yourself from the queue with `scancel [job id]`.
+
+Quoting a wise man. Priority of a job will depend on the size of the job (smaller jobs have higher priority) and the amount of resources used in the past (if you have consumed less resources in the past you will have a higher priority).
 
 ## Monitor node usage
 
