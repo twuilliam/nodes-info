@@ -1,5 +1,7 @@
 # IvI GPU cluster
 
+There is a channel `#ivi_cluster` in the IvI slack.
+
 ## Hostname
 
 `ivi-h0.science.uva.nl` to access the cluster. Use your UvAnetID as credentials.
@@ -26,11 +28,11 @@ Same but with 4 GPUs for 1 day and 8 hours:
 `srun -u --pty --gres=gpu:4 --mem=120G --cpus-per-task=40 --time=1-8 bash -i`  
 
 Ideally you should submit a job instead of using an interactive session:  
-`srun --gres=gpu:1 --mem=32G --cpus-per-task=12 --time=1-0 python myscript.py --myargument=foo`
-
-slurm will provide a job id. Use that id if you want to remove yourself from the queue with `scancel [job id]`.
+`srun --gres=gpu:1 --mem=30G --cpus-per-task=10 --time=2:30:00 python myscript.py --myargument=foo`
 
 Quoting a wise man. Priority of a job will depend on the size of the job (smaller jobs have higher priority) and the amount of resources used in the past (if you have consumed less resources in the past you will have a higher priority).
+
+slurm will provide a job id. Use that id if you want to remove yourself from the queue with `scancel [job id]`.
 
 ## Monitor node usage
 
