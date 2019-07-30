@@ -38,6 +38,13 @@ slurm will provide a job id. Use that id if you want to remove yourself from the
 
 Either use `squeue` or `mywatch` (see last line of [.bashrc](#useful-things-to-have-in-your-bashrc))
 
+
+## Use node's Jupyter Notebook on local browser
+1. First get an interactive session on a GPU node.
+2. Run `jupyter notebook --no-browser --port=20105` on GPU node. And you'll get a token like this `http://localhost:20105/?token=31427b811f3f3fdaef9d5da5cce8c81ba4df2f2ed4535960`.
+3. Run `ssh -L 20103:localhost:20104 schen@ivi-h0.science.uva.nl ssh -L 20104:localhost:20105 ivi-cn009` on your local machine. Here you project the local port `20103` to IvI port `20104` and project IvI port `20104` to GPU node port `20105`.
+4. Open your browser and go to http://localhost:20103 and paste the token in step 2 `31427b811f3f3fdaef9d5da5cce8c81ba4df2f2ed4535960`.
+
 ## Data storage
 
 TBA
