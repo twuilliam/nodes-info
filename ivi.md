@@ -1,6 +1,7 @@
 # IvI GPU cluster
 
-There is a channel `#ivi_cluster` in the IvI slack.
+There is a channel `#ivi_cluster` in the IvI slack.  
+Read the pinned posts for more info, this readme only provides the basics.
 
 ## Hostname
 
@@ -47,7 +48,8 @@ Either use `squeue` or `mywatch` (see last line of [.bashrc](#useful-things-to-h
 
 ## Data storage
 
-200 GB on your home directory.
+1 TB on your home directory.  
+Move your data to /hddstore or /sddstore for faster compute.
 
 ## Change GCC version
 
