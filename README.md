@@ -1,6 +1,6 @@
 # nodes-info
 
-Resources on how to use the GPU clusters: [das5](das5.md) and [LISA](lisa.md).
+Resources on how to use the GPU clusters: [das5](das5.md), [ivi](ivi.md) and [LISA](lisa.md).
 
 ## General things to know
 
@@ -12,7 +12,7 @@ Resources on how to use the GPU clusters: [das5](das5.md) and [LISA](lisa.md).
 
 * `CUDA_VISIBLE_DEVICES=0 python myscript.py` will only make the GPU:0 visible to python. Alternatively, you can specify it within your python script.
 
-* You can create a bash script with multiple parallel jobs that you will submit via `slurm` or `torque`. Here is an example:
+* You can create a bash script with multiple parallel jobs that you will submit via `slurm`. Here is an example:
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 python exp1.py & \
